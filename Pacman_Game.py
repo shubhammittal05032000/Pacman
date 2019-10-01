@@ -43,7 +43,8 @@ def draw_coin(screen, pos):
 	img=pygame.image.load("coin.png").convert()
 	screen.blit(img,pixels)	
 def valid_move(pos,pos2):#to check move by pacman or enemies are valid i.e no wall
-        if(layout[pos[1]+pos2[1],pos[0]+pos2[0]]!='w'):
+        if(
+		ut[pos[1]+pos2[1],pos[0]+pos2[0]]!='w'):
                 return True
         else:
                 return False      
@@ -52,7 +53,7 @@ def add_to_pos(pos, pos2):
 def pixels_from_points(pos):
 	return (pos[0]*WIDTH, pos[1]*HEIGHT)
 
-layout = loadtxt('layout1.txt', dtype=str)
+layout = loadtxt('layout2.txt', dtype=str)
 rows, cols = layout.shape
 k=0
 #to count the number of coins in the given layout of pacman game and give initial position to enemy 2 and 3
