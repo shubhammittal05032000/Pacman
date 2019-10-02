@@ -53,7 +53,7 @@ def add_to_pos(pos, pos2):
 def pixels_from_points(pos):
 	return (pos[0]*WIDTH, pos[1]*HEIGHT)
 
-layout = loadtxt('layout2.txt', dtype=str)
+layout = loadtxt('layout1.txt', dtype=str)
 rows, cols = layout.shape
 k=0
 #to count the number of coins in the given layout of pacman game and give initial position to enemy 2 and 3
