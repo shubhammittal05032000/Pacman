@@ -8,4 +8,4 @@ The game is platform independent.
 
 Have fun!!!
 
-#### Developed by: Shubham Mittal
+#### Made by: Shubham Mittal
